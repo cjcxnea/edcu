@@ -1,0 +1,147 @@
+:root {
+    --theme-color: #003F7E;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑", NeeaSimsun-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+}
+
+
+.main {
+    padding: 2vmin 3vmin;
+    box-sizing: border-box;
+}
+.current-position a {
+    font-size: .875rem;
+    color: #666;
+    text-decoration: none;
+}
+.page-title {
+    width: 90%;
+    margin: 4vmin auto;
+}
+.page-title h2 {
+    font-size: 4.53333vmin;
+    font-weight: 700;
+    text-align: center;
+    color: #003f7e;
+    line-height: 1.5;
+}
+
+.history-query,
+.query-form {
+    width: 100%;
+    margin: 3vmin auto;
+    padding: 3vmin;
+    box-sizing: border-box;
+    border-radius: 1.5vmin;
+    box-shadow: 0 0 1.8vmin rgb(0 0 0/20%);
+}
+.form-info {
+    margin-bottom: 3.2vmin;
+}
+.query-form-title,
+.query-form-title-3 {
+    display: block;
+    font-size: 4.26667vmin;
+    text-align: justify;
+    width: 4em;
+    text-align-last: justify;
+}
+.query-form-title-3 {
+    width: 9em;
+}
+.query-form-input {
+    width: 100%;
+    padding: 2.4vmin 0;
+    border-bottom: 0.26666667vmin solid #dadada;
+}
+.query-form-input select,
+.query-form-input input {
+    width: 100%;
+    height: 5.26667vmin;
+    font-size: 4vmin;
+    padding: 0 1vmin;
+    border: none;
+    border-radius: 0;
+    background: #f5f5f5;
+}
+/* 补充：针对不同浏览器的兼容性优化（可选） */
+/* Firefox */
+select::-moz-focus-inner {
+    border: 0;
+}
+/* Chrome/Safari */
+select:focus {
+    outline: none;
+    border-color: #1890ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+.query-form-input select:focus,
+.query-form-input input:focus {
+    outline: none;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    font-size: 4vmin;
+    padding: 0 1vmin;
+}
+.query-form-extra {
+    font-size: 3.66667vmin;
+    color: #a3a3a3;
+    margin-top: .6vmin;
+    text-align: right;
+}
+
+.btn {
+    width: 80%;
+    height: 9vmin;
+    margin: 0 auto;
+}
+.btn a,
+.btn button {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 4.66667vmin;
+    color: #fff;
+    background: var(--theme-color);
+    border: none;
+    border-radius: 1.5vmin;
+    text-align-last: center;
+    line-height: 9vmin;
+    cursor: pointer;
+}
+.btn button {
+    letter-spacing: 1.5vmin;
+}
+.btn a {
+    text-decoration: none;
+}
+.notice {
+    font-size: 3.66667vmin;
+    color: #ff9919;
+    margin: 3vmin 0;
+}
+.question {
+    font-size: 4vmin;
+    line-height: 10vmin;
+    text-align: center;
+    border-top: 0.4vmin solid #dadada;
+}
+.question a {
+    text-decoration: none;
+    color: var(--theme-color);
+    margin: 0 .625rem;
+}
+.history-query p {
+    margin: 3vmin 0;
+    font-size: 4vmin;
+    color: #000;
+    text-align: justify;
+}

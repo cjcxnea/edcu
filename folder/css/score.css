@@ -1,0 +1,119 @@
+:root {
+    --theme-color: #003F7E;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑", NeeaSimsun-Regular, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: #fff;
+}
+
+.main {
+    padding: 2vmin 3vmin;
+    box-sizing: border-box;
+}
+.current-position a {
+    font-size: 14px;
+    color: #666;
+    text-decoration: none;
+}
+.user-info,
+.score-info {
+    width: 100%;
+    margin: 3vmin auto;
+    padding: 1vmin 3vmin;
+    box-sizing: border-box;
+    border-radius: 1.5vmin;
+    box-shadow: 0 0 1.8vmin rgb(0 0 0/20%);
+}
+.page-title {
+    width: 100%;
+}
+.page-title h2 {
+    font-size: 5.2vmin;
+    font-weight: 600;
+    text-align: center;
+    color: var(--theme-color);
+    margin: 3vmin 0;
+}
+.user-info ul,
+.score-info ul {
+    list-style: none;
+    width: 100%;
+}
+.user-info ul li,
+.score-info ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 4vmin;
+    font-weight: 600;
+    color: #000;
+    line-height: 10vmin;
+    border-bottom: 0.26666667vmin solid #dadada;
+}
+.user-info ul li .value,
+.score-info ul li .value {
+    font-weight: 500;
+}
+.score-info ul li:nth-child(2) .value {
+    color: red;
+}
+.user-info li:nth-child(-n+3) .label {
+    width: 4em;
+    text-align: justify;
+    text-align-last: justify;
+}
+.score-info li:nth-child(2) .label,
+.score-info li:nth-child(2) .speak-label {
+    width: 4em;
+    text-align: justify;
+    text-align-last: justify;
+}
+.score-info li:nth-child(n+3) .label {
+    width: 5em;
+    text-align: justify;
+    text-align-last: justify;
+    margin-left: 4em;
+}
+.score-info h2 {
+    display: inline-block;
+    width: 100%;
+    line-height: 10vmin;
+    font-size: 4vmin;
+    font-weight: 700;
+    text-align: center;
+    color: #003f7e;
+}
+.tips {
+    padding: 3vmin;
+    margin: 3vmin;
+    border-radius: 1.5vmin;
+    box-shadow: 0 0 1.8vmin rgb(0 0 0/20%);
+    text-align: justify;
+}
+.tips span {
+    font-size: 4vmin;
+    color: #a3a3a3;
+}
+.return-btn {
+    /* width: 90%; */
+    margin: 0 auto;
+}
+.return-btn button {
+    display: block;
+    width: 100%;
+    height: 9vmin;
+    font-size: 4.66667vmin;
+    color: #fff;
+    background: var(--theme-color);
+    border: none;
+    border-radius: 1.5vmin;
+    text-align-last: center;
+    line-height: 9vmin;
+    letter-spacing: 4vmin;
+    cursor: pointer;
+}
